@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7F85DD76-60A0-4191-A9CC-410FD953CC2D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LuaPlusPlus</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectName>LuaPlusPlus</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Include;C:\Users\Deftsu\Documents\Visual Studio 2017\Projects\League++ SDK\League++ SDK;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencies\Include;C:\Users\Deftsu\Documents\Visual Studio 2017\Projects\League++ SDK\League++ SDK;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LUA_EXPORTS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Users\Victor\Downloads\libcurl-master\libcurl-master\include;E:\Users\Victor\Desktop\Depois organziar\Advsound;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;E:\Users\Victor\Documents\Visual Studio 2015\Projects\Teste\pxgDLL\pxgDLL\Detours;E:\Users\Victor\Downloads\LeaguePlusPlus-master\LeaguePlusPlus-master\LuaPlusPlus\Dependencies\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\VC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;LUA_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Users\Victor\Downloads\LeaguePlusPlus-master\LeaguePlusPlus-master\LuaPlusPlus\Dependencies\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\VC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LUA_EXPORTS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS=1;_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Users\Victor\Downloads\libcurl-master\libcurl-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\Users\Victor\Downloads\libcurl-master\libcurl-master\lib\dll-release-x86;E:\Users\Victor\Downloads\libcurl-master\libcurl-master\lib;C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\VC\lib;E:\Users\Victor\Downloads\libcurl-master\libcurl-master\lib\static-release-x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;LUA_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft Visual Studio 14.0\VC\lib\onecore;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dependencies\Include\lapi.c" />
+    <ClCompile Include="..\Dependencies\Include\lauxlib.c" />
+    <ClCompile Include="..\Dependencies\Include\lbaselib.c" />
+    <ClCompile Include="..\Dependencies\Include\lbitlib.c" />
+    <ClCompile Include="..\Dependencies\Include\lcode.c" />
+    <ClCompile Include="..\Dependencies\Include\lcorolib.c" />
+    <ClCompile Include="..\Dependencies\Include\lctype.c" />
+    <ClCompile Include="..\Dependencies\Include\ldblib.c" />
+    <ClCompile Include="..\Dependencies\Include\ldebug.c" />
+    <ClCompile Include="..\Dependencies\Include\ldo.c" />
+    <ClCompile Include="..\Dependencies\Include\ldump.c" />
+    <ClCompile Include="..\Dependencies\Include\lfunc.c" />
+    <ClCompile Include="..\Dependencies\Include\lgc.c" />
+    <ClCompile Include="..\Dependencies\Include\linit.c" />
+    <ClCompile Include="..\Dependencies\Include\liolib.c" />
+    <ClCompile Include="..\Dependencies\Include\llex.c" />
+    <ClCompile Include="..\Dependencies\Include\lmathlib.c" />
+    <ClCompile Include="..\Dependencies\Include\lmem.c" />
+    <ClCompile Include="..\Dependencies\Include\loadlib.c" />
+    <ClCompile Include="..\Dependencies\Include\lobject.c" />
+    <ClCompile Include="..\Dependencies\Include\lopcodes.c" />
+    <ClCompile Include="..\Dependencies\Include\loslib.c" />
+    <ClCompile Include="..\Dependencies\Include\lparser.c" />
+    <ClCompile Include="..\Dependencies\Include\lstate.c" />
+    <ClCompile Include="..\Dependencies\Include\lstring.c" />
+    <ClCompile Include="..\Dependencies\Include\lstrlib.c" />
+    <ClCompile Include="..\Dependencies\Include\ltable.c" />
+    <ClCompile Include="..\Dependencies\Include\ltablib.c" />
+    <ClCompile Include="..\Dependencies\Include\ltm.c" />
+    <ClCompile Include="..\Dependencies\Include\lundump.c" />
+    <ClCompile Include="..\Dependencies\Include\lutf8lib.c" />
+    <ClCompile Include="..\Dependencies\Include\lvm.c" />
+    <ClCompile Include="..\Dependencies\Include\lzio.c" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LocalPlayer.cpp" />
+    <ClCompile Include="LuaEngine.cpp" />
+    <ClCompile Include="LuaMain.cpp" />
+    <ClCompile Include="Engine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common_helpers.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="const.h" />
+    <ClInclude Include="Creature.h" />
+    <ClInclude Include="declarations.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="imconfig.h" />
+    <ClInclude Include="imgui.h" />
+    <ClInclude Include="imgui_impl_dx9.h" />
+    <ClInclude Include="imgui_impl_win32.h" />
+    <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="imstb_rectpack.h" />
+    <ClInclude Include="imstb_textedit.h" />
+    <ClInclude Include="imstb_truetype.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="LocalPlayer.h" />
+    <ClInclude Include="LuaMain.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Outfit.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="Protocol.h" />
+    <ClInclude Include="Script.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="TileItem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

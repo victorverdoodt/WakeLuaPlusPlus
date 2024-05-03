@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{14afe468-8594-42ec-ac66-d9a994c098f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{518e0952-1663-430d-a8b9-7ee7f3d9313d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaEngine">
+      <UniqueIdentifier>{7e08da05-923e-4189-8ce9-009141714b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{46d289bf-d308-4283-b27b-ce30b1808e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{3c5467fa-f02b-4692-8659-8f70844bb8d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LuaMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaEngine.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lapi.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lauxlib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lbaselib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lbitlib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lcode.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lcorolib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lctype.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ldblib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ldebug.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ldo.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ldump.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lfunc.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lgc.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\linit.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\liolib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\llex.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lmathlib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lmem.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\loadlib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lobject.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lopcodes.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\loslib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lparser.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lstate.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lstring.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lstrlib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ltable.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ltablib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\ltm.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lundump.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lutf8lib.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lvm.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\Include\lzio.c">
+      <Filter>Source Files\LuaEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx9.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalPlayer.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="common_helpers.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx9.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="const.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Position.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Outfit.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalPlayer.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TileItem.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMain.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="declarations.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
